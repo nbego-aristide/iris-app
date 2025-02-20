@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import joblib
+import pandas as pd
 
 
 sepal_long = st.slider("Entrez la longueur du sepal", 0.0, 10.0)
