@@ -16,8 +16,11 @@ if st.button("Prediction sur la fleur", type="primary"):
     
     f = np.array([[sepal_long, sepal_larg, petal_long, petal_larg]])
     X = pd.DataFrame(f,columns=['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth'])
+
     
-    response="udududud"
+    prediction = model.predict(X)
+    
+    response = prediction[0]
 
  
     st.write("fleur est: ", response)
