@@ -11,8 +11,8 @@ petal_larg = st.slider("Entrez la largeur du petal", 0.0, 10.0)
 
 
 if st.button("Prediction sur la fleur", type="primary"): 
-    model= joblib.load("my_model.pkl")
-    scaler= joblib.load("my_scaler.pkl")
+    model= joblib.load("mon_model2.pkl")
+    scaler= joblib.load("mon_scaler.pkl")
     
     f = np.array([[sepal_long, sepal_larg, petal_long, petal_larg]])
     X = pd.DataFrame(f,columns=['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth'])
